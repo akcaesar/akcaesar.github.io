@@ -1,23 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import About from './components/About';
+import Achievements from './components/Achievements';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import ParticlesBackground from './components/pgbackground';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and (my name is akshay)save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div style={{ position: 'relative', width: '100vw', height: '100vh', backgroundColor: 'black' }}>
+      <ParticlesBackground />
+
+      <Router>
+        <nav
+          style={{
+            position: 'relative',
+            zIndex: 1,
+            display: 'flex',
+            justifyContent: 'space-around',
+            padding: '1rem',
+            backgroundColor: 'rgba(0, 0, 0, 0.3)',
+            backdropFilter: 'blur(10px)',
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          <Link style={{ color: 'white', textDecoration: 'none' }} to="/">About</Link>
+          <Link style={{ color: 'white', textDecoration: 'none' }} to="/achievements">Achievements</Link>
+          <Link style={{ color: 'white', textDecoration: 'none' }} to="/projects">Projects</Link>
+          <Link style={{ color: 'white', textDecoration: 'none' }} to="/contact">Contact</Link>
+        </nav>
+
+        <div
+          style={{
+            position: 'relative',
+            zIndex: 1,
+            color: 'white',
+            textAlign: 'center',
+            paddingTop: '20vh',
+          }}
+        >
+          <h1>Akshay Narendra Shewatkar</h1>
+          <p>Portfolio</p>
+        </div>
+
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/achievements" element={<Achievements />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
