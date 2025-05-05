@@ -8,7 +8,7 @@ import ParticlesBackground from './components/pgbackground';
 
 function App() {
   return (
-    <div style={{ position: 'relative', width: '100vw', height: '100vh', backgroundColor: 'black' }}>
+    <div style={{ position: 'relative', width: '100vw', height: '100vh', backgroundColor: 'black', overflowY: 'auto' }}>
       <ParticlesBackground />
 
       <Router>
@@ -29,25 +29,23 @@ function App() {
           <Link style={{ color: 'white', textDecoration: 'none' }} to="/contact">Contact</Link>
         </nav>
 
+        {/* Route-based rendering area */}
         <div
           style={{
             position: 'relative',
             zIndex: 1,
             color: 'white',
-            textAlign: 'center',
-            paddingTop: '20vh',
+            padding: '2rem',
+            paddingTop: '5rem',
           }}
         >
-          <h1>Akshay Narendra Shewatkar</h1>
-          <p>Portfolio</p>
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/achievements" element={<Achievements />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
         </div>
-
-        <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="/achievements" element={<Achievements />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
       </Router>
     </div>
   );
