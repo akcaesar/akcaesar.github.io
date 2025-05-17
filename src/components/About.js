@@ -1,40 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M0ZST7FW6Q"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-M0ZST7FW6Q', {
-    'geo': {
-      'country': 'US', // Replace with the user's country code
-      'region': 'CA', // Replace with the user's region code
-      'city': 'San Francisco', // Replace with the user's city
-      'latitude': 37.7749, // Replace with the user's latitude
-      'longitude': -122.4194 // Replace with the user's longitude
-    },
-    'country': 'US', // Replace with the user's country code
-    'timestamp': new Date().getTime(), // Get the current timestamp
-    'device': {
-      'category': 'desktop', // Replace with the user's device category (e.g. desktop, mobile, tablet)
-      'browser': 'Chrome', // Replace with the user's browser
-      'browser_version': '90.0.4430.212', // Replace with the user's browser version
-      'os': 'Windows 10', // Replace with the user's operating system
-      'os_version': '10.0.19042.1052', // Replace with the user's operating system version
-      'screen_resolution': '1920x1080', // Replace with the user's screen resolution
-      'screen_pixel_depth': 24 // Replace with the user's screen pixel depth
-    },
-    'page_title': 'About Us',
-    'page_path': '/about',
-    'referrer': 'https://www.example.com',
-    'screen_name': 'about',
-    'event_category': 'click',
-    'event_action': 'button click',
-    'event_label': 'learn more'
-  });
-</script>import { FaPython, FaDocker, FaGithub, FaLanguage, FaRobot } from 'react-icons/fa';
+import { FaPython, FaDocker, FaGithub, FaLanguage, FaRobot } from 'react-icons/fa';
 
 function About({ lang }) {
   const text = {
