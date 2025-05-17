@@ -8,7 +8,7 @@ function About({ lang }) {
       title: "Akshay Narendra Shewatkar",
       role: "AI/ML Engineer · Deep Learning Specialist · Full-Stack Innovator",
       desc: `
-        Hi, I’m Akshay Shewatkar — a multilingual engineer passionate about building intelligent systems that make a difference. I speak English, Hindi, Marathi, and German, and I enjoy working at the intersection of AI, robotics, and backend systems.
+        Hi, I’m Akshay Shewatkar — a engineer passionate about building intelligent systems that make a difference. I speak English, Hindi, Marathi, and German(Intermediate), and I enjoy working at the intersection of AI, robotics, and backend systems.
 
 My journey started at IIT Indore, where I led the steering design for our BAJA ATV and co-developed an SMA-actuated aquatic robot that later evolved into an ongoing research line. That project won the Best BTP award and sparked my interest in intelligent automation. After a few years of industrial experience in India, I moved to Germany in 2019 to pursue my Master’s in Robotic Systems Engineering at RWTH Aachen.
 
